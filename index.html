@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keagr — Photography Portfolio</title>
+  <meta name="description" content="Photography portfolio by Keagr — capturing moments that matter." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="#hero">Keagr</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Photography Portfolio</p>
+      <h1 class="hero-title">Capturing Light<br /><em>& Moments</em></h1>
+      <p class="hero-subtitle">Landscapes · Portraits · Architecture · Documentary</p>
+      <a href="#portfolio" class="btn btn-outline">View Work</a>
+    </div>
+    <a href="#portfolio" class="hero-scroll" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 class="section-title">Portfolio</h2>
+      </header>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="landscape" role="tab" aria-selected="false">Landscape</button>
+        <button class="filter-btn" data-filter="portrait" role="tab" aria-selected="false">Portrait</button>
+        <button class="filter-btn" data-filter="architecture" role="tab" aria-selected="false">Architecture</button>
+        <button class="filter-btn" data-filter="documentary" role="tab" aria-selected="false">Documentary</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery" id="gallery">
+
+        <div class="gallery-item" data-category="landscape">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain landscape at sunrise" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Alpine Sunrise</h3>
+            <p>Swiss Alps, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="portrait">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80" alt="Portrait in natural light" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Natural Light</h3>
+            <p>Studio Series, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="architecture">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Modern architecture" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Steel &amp; Glass</h3>
+            <p>Urban Series, 2023</p>
+          </div>
+        </div>
+
+        <div class="gallery-item wide" data-category="landscape">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80" alt="Ocean at golden hour" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Golden Hour</h3>
+            <p>Pacific Coast, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="documentary">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80" alt="Street scene at dusk" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>City Dusk</h3>
+            <p>Documentary, 2023</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portrait">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=800&q=80" alt="Lifestyle portrait outdoors" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Outdoor Lifestyle</h3>
+            <p>Editorial, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="architecture">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?w=800&q=80" alt="Spiral staircase architecture" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>The Spiral</h3>
+            <p>Architectural Study, 2024</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscape">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=800&q=80" alt="Forest in morning mist" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Morning Mist</h3>
+            <p>Pacific Northwest, 2023</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="documentary">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80" alt="Market scene documentary" loading="lazy" />
+            <div class="gallery-overlay"></div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Market Day</h3>
+            <p>Documentary, 2023</p>
+          </div>
+        </div>
+
+      </div><!-- /gallery -->
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#8592;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">&#8594;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxSub"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== INSTAGRAM ===== -->
+  <section class="section section-dark" id="instagram">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Follow Along</p>
+        <h2 class="section-title">
+          <svg class="insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          @keagr
+        </h2>
+        <p class="section-desc">Latest shots from Instagram</p>
+      </header>
+
+      <!-- Instagram Feed -->
+      <div class="instagram-feed" id="instagramFeed">
+        <!-- Populated by instagram.js or falls back to placeholder -->
+      </div>
+
+      <!-- Setup Notice (shown when no access token is configured) -->
+      <div class="instagram-setup" id="instagramSetup" hidden>
+        <div class="setup-card">
+          <h3>Connect Your Instagram</h3>
+          <p>To display your live Instagram feed, add your <strong>Instagram Basic Display API</strong> access token to <code>js/instagram.js</code>.</p>
+          <ol>
+            <li>Go to <a href="https://developers.facebook.com/" target="_blank" rel="noopener">developers.facebook.com</a> and create an app.</li>
+            <li>Add the <strong>Instagram Basic Display</strong> product.</li>
+            <li>Generate a long-lived access token for your account.</li>
+            <li>Set <code>INSTAGRAM_TOKEN</code> in <code>js/instagram.js</code>.</li>
+          </ol>
+          <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener" class="btn btn-outline">View on Instagram</a>
+        </div>
+      </div>
+
+      <div class="instagram-cta">
+        <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener" class="btn btn-outline">
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Photographer portrait" loading="lazy" />
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Years</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">120+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title">The Story<br /><em>Behind the Lens</em></h2>
+          <p>I'm a documentary and fine-art photographer based on the Pacific Coast. My work explores the intersection of light, landscape, and human presence — finding stillness in movement and stories in silence.</p>
+          <p>With over eight years shooting across 40+ countries, I've developed an eye for the extraordinary within the everyday. Whether it's dawn light over an alpine ridge or the quiet intensity of a market square, I seek images that resonate long after the shutter closes.</p>
+          <p>Available for editorial assignments, commercial projects, and fine-art print commissions.</p>
+          <div class="about-links">
+            <a href="#contact" class="btn btn-primary">Work Together</a>
+            <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Create<br /><em>Something Beautiful</em></h2>
+          <p>Whether you have a project in mind or just want to say hello, I'd love to hear from you.</p>
+          <ul class="contact-details">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:keag@robinsoncentral.net">keag@robinsoncentral.net</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener">@keagr</a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject…</option>
+              <option value="editorial">Editorial / Commercial</option>
+              <option value="print">Fine Art Prints</option>
+              <option value="portrait">Portrait Session</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="formNote" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">Keagr</p>
+          <p>Photography that tells stories.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <h4>Follow</h4>
+          <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Keagr. All rights reserved.</p>
+        <p>Built with light &amp; code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/instagram.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
