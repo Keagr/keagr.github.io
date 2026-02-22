@@ -1,0 +1,19 @@
+/**
+ * Instagram Feed — powered by Behold (https://behold.so)
+ * ========================================================
+ * The Instagram feed is handled entirely by the Behold widget web component.
+ * No API tokens or custom code needed here.
+ *
+ * SETUP
+ * -----
+ * 1. Sign up at https://behold.so
+ * 2. Connect your Instagram account (@keagr)
+ * 3. Customise your feed layout in the Behold dashboard
+ * Feed ID in use: 8mbR0YQuKZmECpsRH44j
+ *
+ * The Behold script tag at the bottom of index.html loads the widget
+ * automatically — nothing else is required.
+ *
+ * NOTE: Behold requires a Business or Creator Instagram account.
+ *       The free plan covers 1,200 widget views/month.
+ */
