@@ -7,7 +7,7 @@
  * SETUP
  * -----
  * 1. Sign up at https://behold.so
- * 2. Connect your Instagram account (@keagr)
+ * 2. Connect your Instagram account (@keagr.photo)
  * 3. Customise your feed layout in the Behold dashboard
  * Feed ID in use: 8mbR0YQuKZmECpsRH44j
  *
