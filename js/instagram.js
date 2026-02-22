@@ -9,9 +9,7 @@
  * 1. Sign up at https://behold.so
  * 2. Connect your Instagram account (@keagr)
  * 3. Customise your feed layout in the Behold dashboard
- * 4. Click "Embed Code" and copy your feed ID (looks like: AbCd1234)
- * 5. In index.html, replace YOUR_FEED_ID in:
- *      <behold-widget feed-id="YOUR_FEED_ID"></behold-widget>
+ * Feed ID in use: 8mbR0YQuKZmECpsRH44j
  *
  * The Behold script tag at the bottom of index.html loads the widget
  * automatically — nothing else is required.
