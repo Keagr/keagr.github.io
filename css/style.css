@@ -449,7 +449,7 @@ em { font-style: italic; color: var(--accent); }
 .lightbox-next  { right: 1.5rem; top: 50%; transform: translateY(-50%); }
 
 /* ============================================================
-   INSTAGRAM WIDGET
+   INSTAGRAM WIDGET (Behold)
    ============================================================ */
 .insta-icon {
   width: 32px; height: 32px;
@@ -458,111 +458,11 @@ em { font-style: italic; color: var(--accent); }
   vertical-align: -6px;
 }
 
-.instagram-feed {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 6px;
+/* Give the Behold widget a bottom margin before the CTA */
+behold-widget {
+  display: block;
   margin-bottom: 2.5rem;
 }
-
-.insta-item {
-  position: relative;
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: var(--radius);
-  cursor: pointer;
-  background: var(--bg-card);
-}
-
-.insta-item img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.insta-item:hover img { transform: scale(1.08); }
-
-.insta-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(10,10,10,0.65);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.insta-item:hover .insta-overlay { opacity: 1; }
-
-.insta-overlay svg { width: 28px; height: 28px; color: var(--white); }
-
-.insta-overlay span {
-  font-size: 0.78rem;
-  color: var(--white);
-  letter-spacing: 0.05em;
-}
-
-/* Loading state */
-.insta-skeleton {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 6px;
-  margin-bottom: 2.5rem;
-}
-
-.insta-skeleton-item {
-  aspect-ratio: 1;
-  background: var(--bg-card);
-  border-radius: var(--radius);
-  animation: pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 0.6; }
-  50%       { opacity: 0.3; }
-}
-
-/* Setup card */
-.instagram-setup { margin-bottom: 2.5rem; }
-
-.setup-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
-.setup-card h3 {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  color: var(--white);
-  margin-bottom: 0.75rem;
-}
-
-.setup-card p { color: var(--text-muted); margin-bottom: 1rem; }
-.setup-card code {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  padding: 0.1em 0.4em;
-  font-size: 0.85em;
-  color: var(--accent);
-}
-
-.setup-card ol {
-  list-style: decimal;
-  padding-left: 1.5rem;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-}
-
-.setup-card ol li { margin-bottom: 0.5rem; }
-.setup-card a[href]:not(.btn) { color: var(--accent); text-decoration: underline; }
 
 .instagram-cta { text-align: center; }
 

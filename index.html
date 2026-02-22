@@ -200,25 +200,9 @@
         <p class="section-desc">Latest shots from Instagram</p>
       </header>
 
-      <!-- Instagram Feed -->
-      <div class="instagram-feed" id="instagramFeed">
-        <!-- Populated by instagram.js or falls back to placeholder -->
-      </div>
-
-      <!-- Setup Notice (shown when no access token is configured) -->
-      <div class="instagram-setup" id="instagramSetup" hidden>
-        <div class="setup-card">
-          <h3>Connect Your Instagram</h3>
-          <p>To display your live Instagram feed, add your <strong>Instagram Basic Display API</strong> access token to <code>js/instagram.js</code>.</p>
-          <ol>
-            <li>Go to <a href="https://developers.facebook.com/" target="_blank" rel="noopener">developers.facebook.com</a> and create an app.</li>
-            <li>Add the <strong>Instagram Basic Display</strong> product.</li>
-            <li>Generate a long-lived access token for your account.</li>
-            <li>Set <code>INSTAGRAM_TOKEN</code> in <code>js/instagram.js</code>.</li>
-          </ol>
-          <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener" class="btn btn-outline">View on Instagram</a>
-        </div>
-      </div>
+      <!-- Behold Instagram Feed Widget -->
+      <!-- Replace YOUR_FEED_ID with the ID from your Behold dashboard → Embed Code -->
+      <behold-widget feed-id="YOUR_FEED_ID"></behold-widget>
 
       <div class="instagram-cta">
         <a href="https://www.instagram.com/keagr" target="_blank" rel="noopener" class="btn btn-outline">
@@ -347,8 +331,9 @@
     </div>
   </footer>
 
+  <!-- Behold Instagram Widget -->
+  <script src="https://w.behold.so/widget.js" type="module"></script>
   <!-- Scripts -->
-  <script src="js/instagram.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
